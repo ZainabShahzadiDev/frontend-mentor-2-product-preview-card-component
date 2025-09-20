@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 36%;
+    height: auto;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.cardInfo {
+    padding: 1.85rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+
+.item {
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.26rem;
+}
+
+.itemName {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    font-family: Fraunces;
+    line-height: 1.8rem;
+    margin: 1.2rem 0;
+}
+
+.description {
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.28rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    margin: 1.3rem 0;
+    display: inline-block;
+}
+
+.newPrice {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin: 0 0.78rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: Montserrat;
+    vertical-align: super;
+}
+
+.addToCart {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.45rem;
+    padding: 0.8rem;
+    text-align: center;
+    /* margin-bottom: 0.2rem; */
+}
+
+.addToCart img {
+    width: 0.8rem;
+
+}
+
+.addToCart a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .card{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
